@@ -1,0 +1,27 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+.titleName{
+   color:#fff;
+   background-color: rgb(101, 164, 250);
+   float: left;
+   height: 800px;
+   width: 250px;
+   margin: 0px;
+  text-align: center;
+}
+.contentText{
+    float: right;
+}
+p{
+    margin-bottom: 0px;
+}
+ul li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 40px;
+}
+.right{
+    padding-left: 40px;
+}

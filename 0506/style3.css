@@ -1,0 +1,64 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+.titleName{
+    background-color: rgb(132, 132, 132);
+    color: #ffffff;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 0px;
+
+}
+p{
+    margin-bottom: 0px;
+}
+
+
+.test{
+    width: 100px;
+    height: 140px;
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    
+}
+ul{
+    margin: 0px;
+
+}
+
+ul li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 40px; 
+   
+}
+ h2{
+    width: 105px;
+    height: 73px;
+    background-color: rgb(214, 214, 214);
+    margin: 0px;
+    padding-top: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.leftSide{
+    float: left;
+    margin-bottom: 2px;
+    
+}
+.rightSide{
+float: right;
+border: 1px solid rgb(214, 214, 214);
+width: 88%;
+height: 99px;
+border-left: none;
+border-top: none;
+}
+.another p{
+margin: 0px;
+padding-left: 40px;
+}
+.another div{
+    padding-left: 40px;
+}
