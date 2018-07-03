@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表消息盒子</title>
+    <style>
+        html {
+            /* 设置无衬线的字体 */
+            font-family: sans-serif;
+        }
+
+        * {
+            /* box-sizing 属性用于更改用于计算元素宽度和高度的默认的 CSS 盒子模型。 */
+            box-sizing: border-box;
+        }
+
+        body {
+            /* 去掉 <body> 默认外边距 */
+            margin: 0;
+        }
+
+        .info-box {
+            width: 450px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .info-box ul {
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        .info-box ul li {
+            float: left;
+            list-style-type: none;
+            width: 150px;
+        }
+
+        .info-box li a {
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+            line-height: 3;
+            background-color: pink;
+            color: white;
+            text-align: center;
+        }
+
+        .info-box li a:focus,
+        .info-box li a:hover {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        .info-box li a.active {
+            background-color: gainsboro;
+            color: brown;
+        }
+
+         .info-box .panels {
+            height: 352px;
+            position: relative;
+            /* 让定位的元素的前后元素不受定位的影响 */
+               clear: both;   
+              
+             
+        }
+
+       .info-box article {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 352px;
+            padding: 10px;
+            color: brown;
+            background-color: gainsboro;
+        }
+
+        
+         .info-box .active-panel {
+            z-index: 1;
+        } 
+    </style>
+</head>
+
+<body>
+    <section class="info-box">
+        <ul>
+            <li>
+                <a href="#" class="active">第一课</a>
+            </li>
+            <li>
+                <a href="#">第二课</a>
+            </li>
+            <li>
+                <a href="#">第三课</a>
+            </li>
+        </ul>
+        <div class="panels">
+            <article class="active-panel">
+                <h2>第一课</h2>
+
+                <p>一位微笑抑郁者曾感叹：“自打学会了微笑，表情和心情就再也没有关系了。”</p>
+            </article>
+            <article>
+                <h2>第二课</h2>
+
+                <p>抑郁的情绪和感受并不会因为你的忽略或是掩饰而消失，事实上，微笑抑郁者在尝试用微笑去隐藏、逃避抑郁的同时，也在“喂养”它，抑郁的情绪会变得越来越严重，也许有一天，它会以更强大、丑陋的面目重现，淹没你所有的希望。</p>
+            </article>
+            <article>
+                <h2>第三课</h2>
+
+                <p>为什么要把抑郁藏起来？总体来说，微笑抑郁者的笑容像是一种防御机制，微笑不再是快乐时的自然流露，而是对内心悲伤的掩饰和否认。</p>
+
+                <ol>
+                    <li>微笑抑郁者对自身的问题感到羞耻。</li>
+                    <li>拒绝承认自身抑郁。</li>
+                    <li>不愿成为别人的负担。</li>
+                </ol>
+            </article>
+        </div>
+    </section>
+    <script>
+    var tabs = document.querySelectorAll('.info-box li a');
+var panels = document.querySelectorAll('.info-box article');
+
+for(i = 0; i < tabs.length; i++) {
+  var tab = tabs[i];
+  setTabHandler(tab, i);
+}
+
+function setTabHandler(tab, tabPos) {
+  tab.onclick = function() {
+    for(i = 0; i < tabs.length; i++) {
+      if(tabs[i].getAttribute('class')) {
+        tabs[i].removeAttribute('class');
+      }
+    }
+
+    tab.setAttribute('class', 'active');
+
+    for(i = 0; i < panels.length; i++) {
+      if(panels[i].getAttribute('class')) {
+        panels[i].removeAttribute('class');
+      }
+    }
+
+    panels[tabPos].setAttribute('class', 'active-panel');
+  }
+}
+</script>
+</body>
+
+</html>

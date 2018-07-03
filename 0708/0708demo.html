@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习布局</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        * {
+            padding:0;
+            margin: 0;
+            }
+        .navBar {
+            width: 100%;
+            background-color: brown;
+            height: 200px;
+            position: relative;
+        }
+
+        .navBar ul {
+            margin: 0px;
+            position: absolute;
+            right: 50px;
+            bottom: 10px;
+             
+        }
+
+        ul,li {
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        .navBar ul li {
+
+            display: inline;
+
+        }
+
+        .navBar ul li a {
+            text-decoration-line: none;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 6px;
+            margin: 4px;
+        }
+
+        .navBar ul li a:hover {
+            padding-top: 10px;
+            padding-right: 6px;
+            padding-bottom: 6px;
+            padding-left: 6px;
+            margin: 4px;
+        }
+
+        .navbar2 ul {
+            margin: 50px; 
+            font-size: 0;
+           
+           
+        }
+
+        .navbar2 ul>li {
+            display: inline-block;
+            font-size: 14px;
+            
+            
+        }
+
+        .navbar2 ul li a {
+            text-decoration-line: none;
+            color: black;
+            border: 1px solid gainsboro;
+            border-radius: 30%;
+            padding: 15px 16px;
+            
+            background-color: #ffffff;
+            
+        }
+
+        .navbar2 ul li a:hover {
+            padding-top: 20px;
+            padding-right: 16px;
+            padding-bottom: 15px;
+            padding-left: 16px;
+            background-color: gainsboro;
+            
+        }
+
+        .line {
+            border: 1px solid gainsboro;
+            border-bottom: none;
+            margin-top: -50px;
+        }
+        .content{
+            display: flex;
+            
+        }
+        .contentM{
+           border: 1px solid salmon;
+           height: 200px;
+           width: 300px;
+           margin: 20px 30px;
+           text-align: center;
+           
+        }
+        .massage{
+            width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navBar">
+        <ul>
+            <li>
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="massage">
+    <div class="navbar2">
+        <ul>
+            <li>
+                <a href="#" >home</a>
+            </li>
+            <li>
+                <a href="#">profile</a>
+            </li>
+            <li>
+                <a href="#">about</a>
+            </li>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div class="content">
+        <div class="contentM">this is content one</div>
+        <div class="contentM">this is content two</div>
+        <div class="contentM">this is content three</div>
+    </div>
+    <div class="content">
+            <div class="contentM">this is content one</div>
+            <div class="contentM">this is content two</div>
+            <div class="contentM">this is content three</div>
+            <div class="contentM">this is content four</div>
+        </div>
+        <div class="content">
+                <div class="contentM">this is content one</div>
+                <div class="contentM">this is content two</div>
+                <div class="contentM">this is content three</div>
+            </div>
+</div>
+</body>
+
+</html>
