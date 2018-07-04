@@ -10,29 +10,36 @@
         body {
             margin: 0px;
         }
+
         * {
-            padding:0;
+            padding: 0;
             margin: 0;
-            }
-        .header{
+        }
+
+        .header {
             width: 100%;
             height: 50px;
             position: relative;
         }
-        .header ul{
+
+        .header ul {
             position: absolute;
             right: 50px;
             bottom: 10px;
         }
+
         .header ul li {
             display: inline-block;
         }
-        .header ul li a{
+
+        .header ul li a {
             text-decoration-line: none;
         }
-        .header img{
+
+        .header img {
             margin-left: 200px;
         }
+
         .navBar {
             width: 100%;
             background-color: brown;
@@ -41,14 +48,15 @@
         }
 
         .navBar ul {
-            
+
             position: absolute;
             right: 50px;
             bottom: 10px;
-             
+
         }
 
-        ul,li {
+        ul,
+        li {
             padding: 0;
             margin: 0;
             list-style: none
@@ -77,17 +85,17 @@
         }
 
         .navbar2 ul {
-            margin: 50px; 
+            margin: 50px;
             font-size: 0;
-           
-           
+
+
         }
 
         .navbar2 ul>li {
             display: inline-block;
             font-size: 14px;
-            
-            
+
+
         }
 
         .navbar2 ul li a {
@@ -96,9 +104,9 @@
             border: 1px solid gainsboro;
             border-radius: 30%;
             padding: 15px 16px;
-            
+
             background-color: #ffffff;
-            
+
         }
 
         .navbar2 ul li a:hover {
@@ -107,7 +115,7 @@
             padding-bottom: 15px;
             padding-left: 16px;
             background-color: gainsboro;
-            
+
         }
 
         .line {
@@ -115,27 +123,38 @@
             border-bottom: none;
             margin-top: -50px;
         }
-        .content{
+
+        .content {
             display: flex;
-            
+
         }
-        .contentM{
-           border: 1px solid salmon;
-           height: 200px;
-           width: 300px;
-           margin: 20px 30px;
-           text-align: center;
-           
+
+        .contentM {
+            border: 1px solid salmon;
+            height: 200px;
+            width: 300px;
+            margin: 20px 30px;
+            padding-top:90px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-align: center;
+
         }
-        .massage{
+
+        
+
+        .massage {
             width: 960px;
             margin: 0 auto;
         }
-        .foot{
+
+        .foot {
             background-color: salmon;
             height: 60px;
         }
-        .foot p{
+
+        .foot p {
             text-align: center;
             color: #ffffff;
             padding-top: 5px;
@@ -146,18 +165,18 @@
 <body>
     <div class="header">
         <img src="egg.png" alt="蛋蛋">
-            <ul>
-                    <li>
-                        <a href="https://github.com/Huanghaiting/homework/tree/master/0708">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="#">Register</a>
-                    </li>
-                    <li>
-                        <a href="#">login</a>
-                    </li>
-                    
-                </ul>
+        <ul>
+            <li>
+                <a href="https://github.com/Huanghaiting/homework/tree/master/0708">GitHub</a>
+            </li>
+            <li>
+                <a href="#">Register</a>
+            </li>
+            <li>
+                <a href="#">login</a>
+            </li>
+
+        </ul>
     </div>
     <nav class="navBar">
         <ul>
@@ -176,41 +195,61 @@
         </ul>
     </nav>
     <div class="massage">
-    <div class="navbar2">
-        <ul>
-            <li>
-                <a href="#" >home</a>
-            </li>
-            <li>
-                <a href="#">profile</a>
-            </li>
-            <li>
-                <a href="#">about</a>
-            </li>
-        </ul>
-        <div class="line"></div>
-    </div>
-    <div class="content">
-        <div class="contentM">this is content one</div>
-        <div class="contentM">this is content two</div>
-        <div class="contentM">this is content three</div>
-    </div>
-    <div class="content">
-            <div class="contentM">this is content one</div>
-            <div class="contentM">this is content two</div>
-            <div class="contentM">this is content three</div>
-            <div class="contentM">this is content four</div>
+        <div class="navbar2">
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">profile</a>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+            </ul>
+            <div class="line"></div>
         </div>
         <div class="content">
-                <div class="contentM">this is content one</div>
-                <div class="contentM">this is content two</div>
-                <div class="contentM">this is content three</div>
+            <div class="contentM">
+                <p>this is content one</p>
             </div>
-</div>
-<footer class="foot">
+            <div class="contentM">
+                <p>this is content two</p>
+            </div>
+            <div class="contentM">
+                <p>this is content three</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentM">
+                <p>this is content one</p>
+            </div>
+            <div class="contentM">
+                <p>this is content two</p>
+            </div>
+            <div class="contentM">
+                <p>this is content three</p>
+            </div>
+            <div class="contentM">
+                <p>this is content four</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentM">
+                <p>this is content one</p>
+            </div>
+            <div class="contentM">
+                <p>this is content two</p>
+            </div>
+            <div class="contentM">
+                <p>this is content three</p>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
 
-    <p>written by HuangHaiting</p>
-</footer>
+        <p>written by HuangHaiting</p>
+    </footer>
 </body>
 
 </html>
