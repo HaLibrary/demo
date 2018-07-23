@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一个漂亮的网站</title>
+    <style>
+        body{
+            min-width: 1170px;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .Hello_World {
+            font-size: 62px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 1.161;
+            text-align: center;
+            padding-top: 12%;
+
+        }
+
+        .box1 {
+            width: 100%;
+            height: 900px;
+            background-image: url(Background1.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 700px;
+        }
+
+        .box3 {
+            width: 100%;
+            height: 800px;
+            background-image: url(Background3.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .intr1 {
+            font-size: 20px;
+            font-family: "Montserrat";
+            color: rgba(255, 255, 255, 0.702);
+            line-height: 1.6;
+            text-align: center;
+            width: 766px;
+            height: 84px;
+            padding-left: 19%;
+            padding-top: 5%;
+
+
+        }
+
+        .Create_Your_Account {
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.75;
+            text-align: center;
+
+        }
+
+        .It_is_absolutely_free {
+            font-size: 12px;
+            font-family: "Montserrat";
+            color: rgba(255, 255, 255, 0.302);
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+
+        }
+
+        .Placeholder {
+            border-width: 1px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 2px;
+            opacity: 0.5;
+            width: 968px;
+            height: 248px;
+            margin-top: 10%;
+            margin-left: 12%;
+            padding-top: 3%;
+        }
+
+        .Input_Field_z {
+            /* border-width: 1px; */
+            border: 1px solid #fff;
+            border-style: solid;
+            border-radius: 2px;
+            width: 290px;
+            height: 48px;
+            margin-left: 12%;
+            margin-top: 6%;
+            /* opacity: 0;  */
+        }
+
+        .Input_password {
+            border-width: 1px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 2px;
+            width: 290px;
+            height: 48px;
+            margin-left: 3%;
+
+            /* opacity: 0.5;  */
+        }
+
+        .input_button {
+            border-radius: 2px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            width: 125px;
+            height: 50px;
+            margin-left: 3%;
+            padding: 0;
+            border: 0px;
+            /* opacity: 1; */
+        }
+
+        .Boatloads_of_Awesome {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            text-transform: uppercase;
+            line-height: 2;
+            text-align: center;
+            margin-top: 8%;
+        }
+
+        .Ready_made {
+            font-size: 42px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.238;
+            text-align: center;
+            width: 657px;
+            height: 93px;
+            margin: 0 auto;
+        }
+
+        .img_feature1 {
+            float: left;
+            margin-left: 20%;
+            margin-top: 120px;
+
+        }
+
+        .img_feature1 img {
+            width: 80%;
+        }
+
+        .img_feature2 img {
+            width: 80%;
+        }
+
+        .img_feature3 img {
+            width: 80%;
+        }
+
+        .img_feature4 img {
+            width: 80%;
+        }
+
+        .img_feature2 {
+            float: left;
+            margin-left: 3%;
+            margin-top: 120px;
+        }
+
+        .img_feature3 {
+            float: left;
+            margin-left: 20%;
+            margin-top: 50px;
+        }
+
+        .img_feature4 {
+            float: left;
+            margin-left: 4%;
+            margin-top: 50px;
+        }
+
+        .Supportive {
+            font-size: 42px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 1.238;
+            text-align: left;
+            width: 400px;
+            height: 137px;
+            padding-left: 16%;
+            padding-top: 100px;
+        }
+
+        .Sit_ad_omnis {
+            font-size: 18px;
+            font-family: "Montserrat";
+            color: rgba(255, 255, 255, 0.702);
+            line-height: 1.556;
+            text-align: left;
+            padding-left: 16%;
+            padding-top: 40px;
+            width: 367px;
+            height: 130px;
+
+        }
+
+        .Button2 {
+            border-radius: 2px;
+            background-color: rgb(255, 255, 255);
+            font-family: "Montserrat";
+            width: 240px;
+            height: 60px;
+            border: 0px;
+            margin-top: 10%;
+            margin-left: 16%;
+        }
+
+        .Button3 {
+            border-width: 1px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 2px;
+            opacity: 0.302;
+            margin-left: 5px;
+            width: 240px;
+            height: 60px;
+        }
+
+        .Try_Our {
+            font-size: 42px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.238;
+            text-align: center;
+            width: 535px;
+            height: 41px;
+            margin: 0 auto;
+            padding-top: 60px;
+
+        }
+
+        .flex3 {
+            display: flex;
+            margin-top: 160px;
+            margin-left: 15%;
+
+        }
+
+        .flex3 div {
+            margin-left: 30px;
+        }
+
+        .box4 {
+            width: 100%;
+            height: 600px;
+
+        }
+
+        .box5 {
+            width: 100%;
+            height: 900px;
+
+        }
+
+        .img_photo1 img {
+            width: 35%;
+            margin-left: 200px;
+            float: left;
+        }
+
+        .Learn_How {
+            font-size: 20px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.6;
+            text-align: left;
+            width: 265px;
+            height: 47px;
+
+
+
+        }
+
+        .Li_Jun {
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgba(20, 20, 20, 0.702);
+            line-height: 1.75;
+            text-align: left;
+            width: 305px;
+            height: 156px;
+            margin-top: 20px;
+            margin-right: 200px;
+        }
+
+        .Learn_How1 {
+            font-size: 20px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.6;
+            text-align: left;
+            width: 265px;
+            height: 47px;
+
+
+
+        }
+
+        .Li_Jun1 {
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgba(20, 20, 20, 0.702);
+            line-height: 1.75;
+            text-align: left;
+            width: 305px;
+            height: 156px;
+            margin-top: 40px;
+
+        }
+
+        .p1 {
+            float: right;
+        }
+
+        .img_photo2 img {
+            width: 35%;
+            margin-top: 120px;
+        }
+
+        .p2 {
+            margin-top: -250px;
+            margin-left: 260px;
+            margin-bottom: 80px;
+        }
+
+        .Our_Awesome_Crew {
+            font-size: 42px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.238;
+            text-align: center;
+
+        }
+
+        .Our_unique {
+            font-size: 18px;
+            font-family: "Montserrat";
+            color: rgba(20, 20, 20, 0.702);
+            line-height: 1.556;
+            text-align: center;
+            width: 695px;
+            height: 46px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .box6 {
+            width: 100%;
+            height: 700px;
+        }
+
+        .img_user {
+            margin-left: 320px;
+            margin-top: 20px;
+
+        }
+
+        .img_user img {
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        .Fell_free_to_Write_Us {
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            text-transform: uppercase;
+            line-height: 2;
+            text-align: center;
+            width: 233px;
+            height: 12px;
+            margin-left: 70px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+        }
+
+        .Input_Field {
+            border-width: 1px;
+            border-color: rgb(38, 35, 33);
+            border-style: solid;
+            border-radius: 2px;
+            opacity: 0.2;
+            width: 368px;
+            height: 48px;
+            margin: 0;
+            margin-top: 40px;
+            margin-left: 10px;
+
+
+        }
+
+        .Input_Field1 {
+            border-width: 1px;
+            border-color: rgb(38, 35, 33);
+            border-style: solid;
+            border-radius: 2px;
+            opacity: 0.2;
+            width: 368px;
+            height: 48px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .Message {
+            border-width: 1px;
+            border-color: rgb(38, 35, 33);
+            border-style: solid;
+            border-radius: 2px;
+            opacity: 0.2;
+            width: 368px;
+            height: 142px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .box7 {
+            width: 100%;
+
+            margin-left: 200px;
+            display: flex;
+
+        }
+
+        .input_b {
+            border: 1px solid gray;
+            width: 400px;
+
+
+        }
+
+        .Contacts {
+            font-size: 42px;
+            font-family: "Montserrat";
+            color: rgb(20, 20, 20);
+            line-height: 1.238;
+            text-align: left;
+
+        }
+
+        .Make_any {
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgba(20, 20, 20, 0.702);
+            line-height: 1.625;
+
+            width: 351px;
+            height: 68px;
+
+        }
+
+        .intr4 {
+            margin-left: 59px;
+        }
+
+        .Buttonh {
+            border-radius: 2px;
+            background-color: rgb(20, 20, 20);
+            color: #fff;
+            width: 370px;
+            height: 50px;
+            margin-top: 20px;
+            border: 0PX;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .imgz {
+            margin-top: 90px;
+        }
+
+        .imgpng {
+            margin-top: 20px;
+        }
+
+        .footbg {
+            background-color: rgb(20, 20, 20);
+            width: 1600px;
+            height: 420px;
+            margin-top: 30px;
+            display: flex;
+
+        }
+
+        .Learn_More a {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 2;
+            text-align: left;
+            color: #fff;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration-line: none;
+
+        }
+
+        .Great_web {
+            font-size: 18px;
+            font-family: "Montserrat";
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.556;
+            text-align: left;
+            
+         
+
+        }
+        .Great_web a{
+            font-size: 18px;
+            font-family: "Montserrat";
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.556;
+            text-align: left;
+
+        }
+        .footmess{
+            padding-left: 80px;
+            padding-top: 100px;
+        }
+        .footmess1{
+            padding-left: 80px;
+            
+        }
+        .footmess1 img{
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div>
+            <p class="Hello_World">Hello World</p>
+            <p class="intr1">China is speeding up strategic plan, standards, traffic rules, laws and reguiations on accident-incurred liabilties
+                for its smart car industry.Econnomic Information Daily reported Thursday.</p>
+        </div>
+        <div class="Placeholder">
+
+            <p class="Create_Your_Account">CREATE YOUR ACCOUNT</p>
+            <P class="It_is_absolutely_free">It is absolutely free</P>
+            <input class="Input_Field_z" type="email" placeholder="denis@getcraftwork.com">
+            <input class="Input_password" type="password" name="" id="" placeholder="Create your password">
+            <input class="input_button" value="Sign Up">
+        </div>
+    </div>
+    <div class="box2">
+        <p class="Boatloads_of_Awesome">Boatloads of Awesome</p>
+        <p class="Ready_made">Ready-made, customizable, HTML landing page sections</p>
+        <div class="img_feature1">
+            <img src="img/Features 1.png" alt="mobile-first">
+        </div>
+        <div class="img_feature2">
+            <img src="img/Features 2.png" alt="pen">
+        </div>
+        <div class="img_feature3">
+            <img src="img/Features 3.png" alt="access">
+        </div>
+        <div class="img_feature4">
+            <img src="img/Features-4_01.png" alt="customizable">
+        </div>
+    </div>
+
+    <div class="box3">
+        <p class="Supportive">Supportive policies for China's smart car</p>
+        <p class="Sit_ad_omnis">china will come up with its own smart car standards. traffic rules. laws and regulations relating to safety.according
+            to the china industry innovation ailliance for the intell.gentand connected wehicles.</p>
+        <button class="Button2">Check out Features</button>
+        <button class="Button3">Try product for Free</button>
+    </div>
+    <div class="box4">
+        <p class="Try_Our">Try Our Awesome Products</p>
+        <div class="flex3">
+            <div>
+                <img src="img/Logo 1.png" alt="Logo 1">
+            </div>
+
+            <div>
+                <img src="img/Logo 2.png" alt="Logo 2">
+            </div>
+
+            <div>
+                <img src="img/Logo 3.png" alt="Logo 3">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="box5">
+        <div class="img_photo1">
+            <img src="img/Photo1.png" alt="图片1">
+
+            <div class="p1">
+                <p class="Learn_How">Learn How to Improve Your Personal Business</p>
+                <p class="Li_Jun">Li Jun, a China Academy of Engineering academician and also director of the aillance's experts committee
+                    said that china will also launch design guidance for smart cars.smart map architecture and standards
+                    for grounds.</p>
+            </div>
+        </div>
+        <div class="img_photo2">
+            <img src="img/Photo2.png" alt="图片2">
+
+            <div class="p2">
+                <p class="Learn_How1">Choose Between Two Beautifully Designed Color Schemes.</p>
+                <p class="Li_Jun1">China will come up with its own smart car standards, traffic rules.laws and regulations reiating to safety.according
+                    to the china industry innovation aliance for thr interligent and cnnected vehiclees.</p>
+            </div>
+        </div>
+        <div class="box6">
+            <p class="Our_Awesome_Crew">Our Awesome Crew</p>
+            <p class="Our_unique">Our unique online teaching style makes learning easy for everyoOur unique online teaching style makes learning
+                easy for everyo</p>
+            <div class="img_user">
+                <img src="img/张思远大.png" alt="张思远大">
+                <!-- </div>
+            <div class="img_user1"> -->
+                <img src="img/Userpic 2.png" alt="">
+            </div>
+            <div class="img_user">
+                <img src="img/Userpic 3.png" alt="">
+                <!-- </div>
+            <div class="img_user1"> -->
+                <img src="img/Userpic 4.png" alt="">
+            </div>
+        </div>
+
+        <div class="box7">
+            <div class="input_b">
+                <div>
+                    <p class="Fell_free_to_Write_Us">Fell free to Write Us</p>
+                </div>
+                <div>
+                    <input type="email" placeholder="E-mail" class="Input_Field">
+                </div>
+                <div>
+                    <input type="text" name="" id="" placeholder="Subject" class="Input_Field1">
+                </div>
+                <div>
+                    <input type="text" placeholder="Message" class="Message">
+                </div>
+                <div>
+                    <button class="Buttonh"> SEND</button>
+                </div>
+            </div>
+
+
+            <div class="intr4">
+                <p class="Contacts">Message</p>
+                <p class="Make_any">Make any design your own using the Style Editor. Personalize for Make any design your own using the Style
+                    Editor. Personalize ford Make any design your own using the Style Editor. Personalize fore.</p>
+                <div class="imgz">
+                    <div class="imgpng">
+                        <img src="img/Map.png" alt="">
+                    </div>
+                    <div class="imgpng">
+                        <img src="img/Phone.png" alt="">
+                    </div>
+                    <div class="imgpng">
+                        <img src="img/Mail.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="footbg">
+            <div>
+                <dl class="footmess">
+                    <dt class="Learn_More">
+                        <a href="">Learn More</a>
+                    </dt>
+
+                    <dd class="Great_web">
+                        <ul>
+                            <li>
+                                <a href="">How it works?</a>
+                            </li>
+                            <li>
+                                <a href="">Meeting tools</a>
+                            </li>
+                            <li>
+                                <a href="">Live streaming</a>
+                            </li>
+                            <li>
+                                <a href="">Contact method</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <dl class="footmess">
+                    <dt class="Learn_More">
+                        <a href="">About Us</a>
+                    </dt>
+
+                    <dd class="Great_web">
+                        <ul>
+                            <li>
+                                <a href="">About us </a>
+                            </li>
+                            <li>
+                                <a href="">Features</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy police</a>
+                            </li>
+                            <li>
+                                <a href="">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <dl class="footmess">
+                    <dt class="Learn_More">
+                        <a href="">Support</a>
+                    </dt>
+
+                    <dd class="Great_web">
+                        <ul>
+                            <li>
+                                <a href=""> F.A.Q.</a>
+                            </li>
+                            <li>
+                                <a href="">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="">Live chat</a>
+                            </li>
+                            <li>
+                                <a href="">Phone call</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div>
+                <dl class="footmess">
+                    <dt class="Learn_More">
+                        <a href="">Enjoy your Life</a>
+                    </dt>
+                    <dd class="Great_web">
+                        <p>Great web UI kit for designers, freelancers or business.</p>
+                    </dd>
+                </dl>
+
+                <div class="footmess1">
+                   <a href=""><img src="img/GoogleIcon.png" alt=""></a> 
+                   <a href=""><img src="img/LinkedInIcon.png" alt=""></a> 
+                   <a href=""><img src="img/FacebookIcon.png" alt=""></a> 
+                   <a href=""><img src="img/TwitterIcon.png" alt=""></a> 
+                   <a href=""><img src="img/TumblerIcon.png" alt=""></a> 
+                   <a href=""><img src="img/PinterestIcon.png" alt=""></a> 
+                </div>
+            </div>
+
+        </footer>
+</body>
+
+</html>
