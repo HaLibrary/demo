@@ -148,7 +148,9 @@ a {
     /* overflow: hidden;
             text-overflow: ellipsis; */
 }
-
+.personalz{
+    border-left:3px solid rgb(35, 153, 241) ;
+}
 .personalItr img {
     width: 20%;
     padding-left: 15px;
@@ -248,7 +250,7 @@ a {
 }
 
 .rightside1 {
-    height: 360px;
+    height: 320px;
     border-bottom: 1px solid rgb(230, 233, 236);
     position: relative;
 }
@@ -288,7 +290,7 @@ a {
 }
 
 .content-box {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "ProximaNova";
     color: rgb(88, 93, 104);
     line-height: 1.357;
@@ -329,7 +331,7 @@ a {
 }
 
 .content-box1 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "ProximaNova";
     color: rgb(88, 93, 104);
     line-height: 1.357;
@@ -366,7 +368,7 @@ a {
     font-weight: bold;
 }
 .content-box2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "ProximaNova";
     color: rgb(88, 93, 104);
     line-height: 1.357;
@@ -389,3 +391,122 @@ a {
 .rightside3 {
     position: relative;
 }
+.Addicon{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(206, 208, 218);
+    background-image: -moz-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    color: rgb(159, 169, 186);
+    width: 40px;
+    height: 40px;
+    /* border-radius: 4px; */
+    position: absolute;
+    top:100px;
+    left: 25px;
+}
+.textbox{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(223, 227, 233);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: 455px;
+    height: 40px;
+    border-left: none;
+    position: absolute;
+    top:100px;
+    left: 65px;
+}
+.textbox:focus{
+    outline: none;
+}
+
+.leftbox_1 li{
+padding-left: 40px;
+padding-top: 20px;
+}
+ 
+.Menu {
+    font-size: 12px;
+    font-family: "ProximaNova";
+    color: rgb(91, 103, 121);
+    text-transform: uppercase;
+    line-height: 3.333;
+    text-align: left;
+    position: absolute;
+    left: 15px;
+   
+  }
+  /* .leftbox_2{
+      position: relative;
+  } */
+  .left-ul{
+    position: relative;
+  }
+ dt img{
+     position: absolute;
+     right: 20px;
+     top: 10px;
+
+ }
+ dd li{
+     padding-top: 10px;
+     padding-left: 15px;
+    padding-top: 15px;
+    
+ }
+dd li a {
+    font-size: 12px;
+    font-family: "ProximaNova";
+    color: rgb(183, 192, 205);
+    line-height: 2.571;
+    text-align: left;
+}
+.lilist{
+    padding-top: 50px;
+}
+li img{
+    padding-right: 10px;
+}
+.Notification img{
+    position: absolute;
+    right: 10px;
+    top:95px;
+}
+.Notification1{
+    position: absolute;
+    right: 10px;
+    top:55px;
+}
+.AlertIcon1{
+    position: absolute;
+    right: 15px;
+    top:95px; 
+}
+.progressbox{
+    position: relative;
+}
+.Monthly_Goals {
+    font-size: 12px;
+    font-family: "ProximaNova";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    position: absolute;
+    
+    top:90px ;
+    
+  }
+  .Monthly_Goals span{
+      padding-left: 20px;
+  }
+  progress {
+    
+    width: 200px;
+    height: 4px;
+    position: absolute;
+    top:130px ;
+    left: 15px;
+  }
+  
