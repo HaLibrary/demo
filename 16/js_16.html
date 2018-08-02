@@ -7,32 +7,41 @@
 </head>
 
 <body>
-    <input id="first-number" type="number" value="1" placeholder="第一个数字">
-    <input id="second-number" type="number" value="2" placeholder="第二个数字">
-    <button id="add-btn" onclick="jia()" >加</button>
-    <button id="minus-btn" onclick="jian()">减</button>
-    <button id="times-btn" onclick="cheng()">乘</button>
-    <button id="divide-btn"onclick="chu()">除</button>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" >加</button>
+    <button id="minus-btn" >减</button>
+    <button id="times-btn" >乘</button>
+    <button id="divide-btn" >除</button>
     <p id="result">运算结果:</p>
     <script>
-        
-        var a =document.getElementById('first-number').value;
-         var b =document.getElementById('second-number').value;
-        var result =document.getElementById("result");
 
+        var num1=document.getElementById("first-number");
+        var num2=document.getElementById("second-number");
+        var addbtn = document.getElementById("add-btn");
+        var minusbtn = document.getElementById("minus-btn");
+        var timesbtn= document.getElementById("times-btn");
+        var dividebtn = document.getElementById("divide-btn");
+        var result=document.getElementById("result");
+
+        addbtn.onclick=function(){
+            result.innerHTML = parseInt(num1.value)+parseInt(num2.value);
+        }
+        minusbtn.onclick=function(){
+            result.innerHTML = parseInt(num1.value)-parseInt(num2.value);
+        }
+        timesbtn.onclick=function(){
+            result.innerHTML = parseInt(num1.value)*parseInt(num2.value);
+        }
+        dividebtn.onclick=function(){
+            if (num2.value==0) {
+                console.log('除数不能为零');
+            } else {
+                result.innerHTML = parseFloat(num1.value)/parseFloat(num2.value);
+            }
+            
+        }
         
-        function jia() {
-            result.innerHTML =result.innerHTML+(Number(a)+Number(b));
-        }
-        function jian() {
-            result.innerHTML =result.innerHTML+(Number(a)+Number(b));
-        }
-        function cheng() {
-            result.innerHTML =result.innerHTML+(Number(a)+Number(b));
-        }
-        function chu() {
-            result.innerHTML =result.innerHTML+(Number(a)+Number(b));
-        }
     </script>
 </body>
 
