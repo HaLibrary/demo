@@ -9,23 +9,31 @@
 </head>
 
 <body>
+  
     <script>
+        var a ='九九乘法表';
+        document.write('<h1>'+a+'</h1>');
+         document.write('<table border="1">');
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>");
 
-        for (var a = 1; a <=9; a++) {
+            for (var j = 1; j <= 9; j++) {
+                document.write("<td>"+ j + '×' + i + '=' + (i * j) + "</td>");
+                if(i==j){
+                document.write('<br/>');
+                break;
+                }
+            }
+                document.write("</tr>");
 
-            for (var i = 1; i <= 9; i++) {
-                document.write(a + '×' + i + '=' + a * i + '<br/>');
-                if (i == a) { 
-                    document.write("<br/>"); break; 
-                    }  //用的if语句，如果这两个数字相同了 那么跳出，另起一行
             }
 
 
-        }
-        
-    
+        document.write("</table>");
 
     </script>
 </body>
 
 </html>
+
+
