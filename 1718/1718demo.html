@@ -89,7 +89,7 @@
     </style>
 </head>
 
-<body>
+<body onload="dateFun()">
     <div class="centerM">
         <div class="aside_left ">
             <div>
@@ -192,16 +192,16 @@
         document.getElementById("name").onclick = function () {
             alert("hello!我是黄海婷！请大家多多指教");
         }
-
+        
+function dateFun(){
         var myDate = new Date();
         var a = myDate.toLocaleTimeString();
         if (a.match('上午')) {
             alert('上午好！');
-        } else if (a.match('下午')) {
+        } else  {
             alert('下午好！');
-        }else{
-            alert('晚上好！');
         }
+    }
     
     </script>
 </body>

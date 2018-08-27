@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" type="text" onkeydown="myFunction(event)">
+    <button id="submit-btn">Submit</button>
+    <script>
+        document.getElementById('submit-btn').onclick = function () {
+            var a = document.getElementById('name');
+            console.log(a.value);
+        }
+        function myFunction(event) {
+        var x = event.keyCode;
+            if (x == 27) {  // 27 是 ESC 键
+                document.getElementById('name').value='';
+            } else if (x == 13) {// 13 是 回车键
+                console.log( document.getElementById('name').value);
+            }
+        }
+    </script>
+</body>
+
+</html>
