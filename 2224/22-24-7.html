@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+        //将上面数组分别按从大到小以及从小到大进行排序后在console中输出
+        //sort() 方法用于对数组的元素进行排序。
+        //从小到大排序
+        function sortNumber1(a, b) {
+            return a - b
+        }
+
+        console.log(arr.sort(sortNumber1));
+        //从大到小排序
+        function sortNumber2(a, b) {
+            return b - a
+        }
+
+        console.log(arr.sort(sortNumber2));
+        //将上面数组分别按字母顺序a-z及z-a进行排序，在console中输出
+        var arr = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+        //按字母顺序a-z进行排序
+        function sortNumber3(a, b) {
+            if (a > b) {
+                return 1;
+            }
+        }
+
+        console.log(arr.sort(sortNumber3));
+
+        //按字母顺序z-a进行排序
+        function sortNumber4(a, b) {
+            if (a < b) {
+                return 1;
+            }
+        }
+
+        console.log(arr.sort(sortNumber4));
+
+        //将下面的二维数组，按照每个元素中第二个数从大到小的顺序进行排序输出，输出结果应该为：
+
+        //[[22, 63], [16, 60], [7, 44], [26, 35], [10, 14]]
+        var arr = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+
+        var mapped = arr.map(function (ar, i) {
+            return { value: ar[1], index: i }   
+            //输出一个object对象，value为排序的数字的值，index为数字所在的数组在一维数组中的索引值
+        })
+        
+        mapped.sort(function (a, b) {
+            return b.value - a.value;
+        })
+        
+        var result = mapped.map(function (ar) {
+            return arr[ar.index];
+        })
+
+        console.log(result);
+
+
+    </script>
+
+</body>
+
+</html>

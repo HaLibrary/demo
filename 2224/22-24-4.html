@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 有如上对象，分别实现代码下方的几个函数，满足以下需求：
+
+假设id和name均不会重复，根据输入name找到对应的id
+假设id和name均不会重复，根据输入id找到对应的name
+把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
+把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
+把这个对象中所有的名字以“后序遍历”的方式全部输出到console中 -->
+
+<body>
+    <script>
+        var tree = {
+            "id": 0,
+            "name": "root",
+            "left": {
+                "id": 1,
+                "name": "Simon",
+                "left": {
+                    "id": 3,
+                    "name": "Carl",
+                    "left": {
+                        "id": 7,
+                        "name": "Lee",
+                        "left": {
+                            "id": 11,
+                            "name": "Fate"
+                        }
+                    },
+                    "right": {
+                        "id": 8,
+                        "name": "Annie",
+                        "left": {
+                            "id": 12,
+                            "name": "Saber"
+                        }
+                    }
+                },
+                "right": {
+                    "id": 4,
+                    "name": "Tony",
+                    "left": {
+                        "id": 9,
+                        "name": "Candy"
+                    }
+                }
+            },
+            "right": {
+                "id": 2,
+                "name": "right",
+                "left": {
+                    "id": 5,
+                    "name": "Carl",
+                },
+                "right": {
+                    "id": 6,
+                    "name": "Carl",
+                    "right": {
+                        "id": 10,
+                        "name": "Kai"
+                    }
+                }
+            }
+        }
+
+        // 假设id和name均不会重复，根据输入name找到对应的id
+        function findIdByName(name) {
+            var id;
+
+            function find(obj) {
+                if (obj != null) {
+                    if (obj.name === name) {
+                        id = obj.id;
+                    }
+                    find(obj.left);
+                    find(obj.right);
+                }
+            }
+            find(tree);
+            return id;
+
+
+        }
+        console.log("用过名字找id");
+        console.log(findIdByName('Saber'));
+        console.log(findIdByName('Fate'));
+        // 假设id和name均不会重复，根据输入id找到对应的name
+        function findNameById(id) {
+            var name;
+
+            function find(obj) {
+                if (obj != null) {
+                    if (obj.id === id) {
+                        name = obj.name;
+                    }
+                    find(obj.left);
+                    find(obj.right);
+                }
+            }
+            find(tree);
+            return name;
+        }
+
+        console.log("通过id找名字");
+        console.log(findNameById(3));
+        console.log(findNameById(7));
+
+
+        // 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
+        function getListWithDLR() {
+            //根节点、左子树、右子树
+            var arr = [];
+
+            function DLR(obj) {
+                if (obj) {
+                    arr.push(obj.name);
+                    DLR(obj.left);
+                    DLR(obj.right);
+                }
+            }
+            DLR(tree);
+            console.log(arr);
+        }
+
+        console.log('前序遍历');
+        getListWithDLR();
+
+        // 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
+        function getListWithLDR() {
+            //左子树，根节点，右子树
+            var arr = [];
+
+            function LDR(obj) {
+                if (obj) {
+                    LDR(obj.left);
+                    arr.push(obj.name);
+                    
+                    LDR(obj.right);
+                }
+            }
+            LDR(tree);
+            console.log(arr);
+        }
+
+        console.log('中序遍历');
+        getListWithLDR();
+
+        // 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中
+        function getListWithLRD() {
+            var arr = [];
+
+            function LRD(obj) {
+                if (obj) {
+                    LRD(obj.left);
+                    LRD(obj.right);
+                    arr.push(obj.name);
+                }
+            }
+            LRD(tree);
+            console.log(arr);
+        }
+
+        console.log('后序遍历');
+        getListWithLRD();
+    </script>
+</body>
+
+</html>
